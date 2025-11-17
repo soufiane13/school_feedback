@@ -1,0 +1,14 @@
+# Ignorer le fichier de mots de passe généré
+logins.txt
+
+# Ignorer les fichiers de données brutes que vous m'avez donnés
+EtudiantsBachelor.md
+ModuleBachelor.md
+moduleMaster.md
+
+# Ignorer les fichiers de configuration de VS Code
+.vscode/
+
+# Ignorer les fichiers système (Windows/Mac)
+Thumbs.db
+.DS_Store
