@@ -8,31 +8,31 @@ The application manages three distinct roles (Student, Instructor, Admin), each 
 
 ### 👨‍🎓 Student Space
 * **Secure Authentication:** Login with a BCRYPT hashed password.
-* [cite_start]**Password Change:** Forced redirect on first login to set a personal password that complies with security standards [cite: 162-164].
+***Password Change:** Forced redirect on first login to set a personal password that complies with security standards.
 * **Dashboard:** Overview of available actions.
-* [cite_start]**Feedback Submission:** Interactive feedback form (1-5 star rating) for modules taken that day [cite: 21-28, 88-95, 204-211].
+***Feedback Submission:** Interactive feedback form (1-5 star rating) for modules taken that day .
 * **Submission Constraints:**
     * **Time-based:** A module is only eligible for feedback on the day of the course (the list is empty after midnight).
     * **Uniqueness:** A student can only submit one feedback per module session.
-* [cite_start]**History:** View all previously submitted feedback [cite: 56-58].
-* [cite_start]**Profile Management:** Modify personal information (name, email) [cite: 53-55].
+* **History:** View all previously submitted feedback.
+***Profile Management:** Modify personal information (name, email) .
 
 ### 👨‍🏫 Instructor Space
 * **Secure Authentication:** Dedicated login portal.
 * **Dashboard:** Displays completed sessions awaiting feedback and a history of submitted feedback.
-* [cite_start]**Class Feedback:** A form allowing the instructor to rate the class's performance (participation, overall work) [cite: 79-82].
+***Class Feedback:** A form allowing the instructor to rate the class's performance (participation, overall work) .
 
 ### ⚙️ Admin Space
 * **Secure Authentication:** Dedicated login portal.
 * **Centralized Dashboard:**
-    * [cite_start]**Statistics:** A summary view with feedback counts and average scores for each criterion, grouped by module and class [cite: 38-41].
+    ***Statistics:** A summary view with feedback counts and average scores for each criterion, grouped by module and class .
     * **Visualization:** A complete table of *all* feedback submitted by students.
-* [cite_start]**Dynamic Filters:** The statistics and main table can be filtered by Class, Module, or Student [cite: 34-37]. Reports update based on the applied filters.
+* **Dynamic Filters:** The statistics and main table can be filtered by Class, Module, or Student . Reports update based on the applied filters.
 
 ### 🔑 Security & Backend
 * **MVC Architecture:** Code is structured into Models (DB logic), Views (HTML/CSS), and Controllers (business logic) for easy maintenance.
 * **Front Controller:** All requests are routed through `public/index.php`.
-* [cite_start]**Password Generation:** A PHP CLI script (`scripts/generate_passwords.php`) is provided to initialize student accounts with secure passwords (CNIL compliant) and store them (hashed in DB, plaintext in a `logins.txt` file for distribution) [cite: 155-176].
+* **Password Generation:** A PHP CLI script (`scripts/generate_passwords.php`) is provided to initialize student accounts with secure passwords (CNIL compliant) and store them (hashed in DB, plaintext in a `logins.txt` file for distribution).
 
 ## 🛠️ Technologies Used
 * **Backend:** Native PHP 8
